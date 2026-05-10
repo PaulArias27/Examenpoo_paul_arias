@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "f0d363a8-ca8d-4900-8c88-def5787d7c76",
+		"name": "Examen Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38492440"
+	},
+	"item": [
+		{
+			"name": "Agregar Vendedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cedula\": \"1\",\r\n  \"tipo\": \"C\",\r\n  \"numeroVentas\": 5,\r\n  \"sueldoFijo\": 0,\r\n  \"comisionPorVenta\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vendedores/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendedores",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcular Sueldo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendedores/calcular/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendedores",
+						"calcular",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
